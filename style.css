@@ -5,12 +5,13 @@
     border: border-box;
 }
 .navbar{
-    height: 60px;
+    height: 100%;
     background-color: #0f1111;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-
+    padding: 5px;
     justify-content: space-evenly;
     
 }
@@ -107,25 +108,33 @@ span{
 
 /* panel */
 .panel{
-    height: 40px;
+    height: 100%;
     background-color: #222f3d;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     color: white;
-    
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.panel-all{
+    margin-bottom: 10px;
 }
 .panel-ops p{
-    display: inline;
     margin-left: 15px;
 }
 .panel-ops{
+    display: flex;
+    flex-wrap: wrap;
     width: 70%;
     font-size: 0.85rem;
+    margin-bottom: 10px;
 }
 .panel-deals{
     font-size: 0.9rem;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 /* hero-section */
 .hero-section{
@@ -139,10 +148,8 @@ span{
 .hero-msg{
     background-color: white;
     color: black;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    text-align: center;
     font-size: 0.85rem;
     width: 80%;
     margin-bottom: 25px;
@@ -166,7 +173,7 @@ span{
 .box{
     height: 400px;
     /* border: 2px solid black; */
-    width: 23%;
+    width: 250px;
     background-color: white;
     padding: 20px 0px 15px;
     margin-top: 15px;
@@ -263,4 +270,12 @@ ul a{
 }
 .copyright{
     text-align: center;
+}
+
+@media screen and  (min-width:730px) and (max-width:1050px) {
+    .nav-logo{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
 }
